@@ -1,7 +1,7 @@
 # W3W
 
 ## About
-A C# .Net 6 Console app that can generate W3W map tri-word and related json data.
+A C# .Net 6 Console app that can generate W3W map tri-word and related json data from GPS coordinates.
 
 - W3W: What Three Words
 - Three words uniquley define a square 3mx3m (10'x10') world-wide
@@ -30,5 +30,12 @@ W3W Words: adjust.case.trains
 Map Link: https://w3w.co/adjust.case.trains
 The map link URL is on the clipboard.
 ```
+
+## Usage
+- Get an API Key
+- Insert to Data.cs
+- Insert lattitude and longitude coordinates into Data.cs
+- Run the app.
+- Paste the Url generated into a Web Browser.
 
 
