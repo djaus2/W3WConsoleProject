@@ -8,7 +8,7 @@ A C# .Net 6 Console app that can generate W3W map tri-word and related json data
 - eg Try this: https://what3words.com/adjust.case.trains
 
 ## Links
-- [Getting Started](Get started)
+- [Getting Started](https://developer.what3words.com/public-api)
 - [Get API Key](https://what3words.com/select-plan?referrer=/public-api)
 
 ## Sample Output
