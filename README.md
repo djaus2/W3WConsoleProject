@@ -33,7 +33,7 @@ The map link URL is on the clipboard.
 
 ## Usage
 - Get an API Key
-- Insert to Data.cs
+- Insert into Data.cs
 - Insert lattitude and longitude coordinates into Data.cs
 - Run the app.
 - Paste the Url generated into a Web Browser.
