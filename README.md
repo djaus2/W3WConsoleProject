@@ -42,4 +42,15 @@ OR
 - Run the app.
 - Paste the Url generated into a Web Browser.
 
+## Update: Projects
+- W3WProject: Standalone Console project
+- WhatThreeWords: W3W in static class library
+  - ```WhatThreeWords.GetW3W()``` Returns W3W class instance
+  - Usage:  
+ ```cs           
+ var w3wjson = await WhatThreeWords.GetW3W(lattitude, longitude, w3wkey);
+```
+- WhatThreeWordsConsole: Console app that calls WhatThreeWords
+  - Same functionality as W3WProject though.
+
 
