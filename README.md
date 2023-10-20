@@ -32,9 +32,13 @@ The map link URL is on the clipboard.
 ```
 
 ## Usage
-- Get an API Key
+Get What3Words Tri-words for GPS location.
+- Get an API Key _(See link above)_
 - Insert into Data.cs
-- Insert lattitude and longitude coordinates into Data.cs
+  - Insert lattitude and longitude coordinates into Data.cs  
+OR
+- Enter lattitude longitude on command line.
+  - AND (Optionally) enter API Key as third parameter.
 - Run the app.
 - Paste the Url generated into a Web Browser.
 
