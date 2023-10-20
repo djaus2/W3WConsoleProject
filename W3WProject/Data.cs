@@ -17,8 +17,8 @@ namespace W3WProject
             }
         }
 
-        public static string w3wkey = "OU4PTX8K";
-        public static double lat = -37.7511;
-        public static double lon = 144.9186;
+        public static string w3wkey = "";
+        public static double lat = 0.0;
+        public static double lon = 0.0;
     }
 }
