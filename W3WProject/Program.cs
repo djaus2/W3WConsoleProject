@@ -8,11 +8,34 @@ namespace W3WProject
     {
         private static HttpClient? sharedClient= null;
 
-        const string baseUrl = "https://api.what3words.com";
-        public static string requestUri = $"v3/convert-to-3wa?coordinates={Data.lat}%2C{Data.lon}&key={Data.w3wkey}";
-
         static async Task Main(string[] args)
         {
+             if (args.Length>0)
+            {
+                if ((args[0]=="-h") || (args[0] == "--h") || (args[0] == "-help") || (args[0] == "--help") || (args[0] == "/?"))
+                {
+                    Console.WriteLine("Get What3Words Tri-words for GPS location.");
+                    Console.WriteLine("Insert values in Data.cs");
+                    Console.WriteLine("OR Enter lattitude longitude on command line.");
+                    Console.WriteLine("   AND (Optionally) enter API Key as third parameter.");
+                    return;
+                }
+                if (args.Length > 1)
+                {
+                    if (double.TryParse(args[0], out double lat))
+                    {
+                        if (double.TryParse(args[1], out double lon))
+                        {
+                            Data.lat = lat;
+                            Data.lon = lon;
+                            if (args.Length > 2)
+                            {
+                                Data.w3wkey = args[2];
+                            }
+                        }
+                    }
+                }
+            }
             // https://learn.microsoft.com/en-us/dotnet/fundamentals/networking/http/httpclient
             Console.WriteLine("Hi from Word3Word App!");
             // HttpClient lifecycle management best practices:
