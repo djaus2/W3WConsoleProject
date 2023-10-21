@@ -50,7 +50,8 @@ OR
  ```cs           
  var w3wjson = await WhatThreeWords.GetW3W(lattitude, longitude, w3wkey);
 ```
-- WhatThreeWordsConsole: Console app that calls WhatThreeWords
+- WhatThreeWordsConsole: Console app that calls WhatThreeWords Class
   - Same functionality as W3WProject though.
+- WhatThreeWordsNugetConsole: As previous but uses Nuget Package WhatThreeWords
 
 
