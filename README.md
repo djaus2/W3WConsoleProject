@@ -10,6 +10,7 @@ A C# .Net 6 Console app that can generate W3W map tri-word and related json data
 ## Links
 - [Getting Started](https://developer.what3words.com/public-api)
 - [Get API Key](https://what3words.com/select-plan?referrer=/public-api)
+   - Can get Free key, 100 lookups per month.
 
 ## Sample Output
 
