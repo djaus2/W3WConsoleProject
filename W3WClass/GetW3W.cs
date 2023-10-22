@@ -6,7 +6,7 @@ namespace W3WClass
 {
     public static class WhatThreeWords
     {
-        public static async Task<W3W> GetW3W(double lat, double lon, string w3wkey)
+        public static async Task<W3W?> GetW3W(double lat, double lon, string w3wkey)
         {
             Data.lat = lat;
             Data.lon = lon;
@@ -19,7 +19,7 @@ namespace W3WClass
             var json = await GetAsync(sharedClient);
             return json;
         }
-        static async Task<W3W> GetAsync(HttpClient httpClient)
+        static async Task<W3W?> GetAsync(HttpClient httpClient)
         {
             // Get it direct
             try
@@ -32,12 +32,12 @@ namespace W3WClass
                 }
                 else
                 {
-                    Console.WriteLine("GetFromJsonAsync method didn't work");
+                    System.Diagnostics.Debug.WriteLine("GetFromJsonAsync method didn't work");
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"GetFromJsonAsync method failed: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"GetFromJsonAsync method failed: {ex.Message}");
             }
             return null;
 
