@@ -9,7 +9,7 @@ Includes lib version and Nuget package enabling reuse of functionality. Also Bla
 - eg Try this: https://what3words.com/adjust.case.trains
 
 ## Links
-- [Blog](https://davidjornes.sportronics.com.au/web/GPS-W3W_Mapping-web.html)
+- [Blog](https://davidjones.sportronics.com.au/web/GPS-W3W_Mapping-web.html)
 - [Getting Started](https://developer.what3words.com/public-api)
 - [Get API Key](https://what3words.com/select-plan?referrer=/public-api)
    - Can get Free key, 100 lookups per month.
