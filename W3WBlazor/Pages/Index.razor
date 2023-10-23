@@ -1,0 +1,86 @@
+﻿@page "/"
+
+@using  W3WClass;
+
+<PageTitle>What Three Words Lookup</PageTitle>
+
+<h1>What Three Words Lookup</h1>
+
+<p>This app gets the What3Words for a GPS location.</p>
+
+<EditForm Model="@Coords">
+<label for="lattitude">Lattitude: </label>
+<InputNumber id="lattitude" @bind-Value=Coords.lat /><br />
+<label for="longitude">longitude: </label>
+<InputNumber id="longitude" @bind-Value=Coords.lon /><br />
+<label for="w3wkey">W3WKey: </label>
+<InputText id="w3wkey" @bind-Value=Coords.w3wkey />
+<br />
+<button @onclick="Get3Words">Get 3 Words!</button>
+</EditForm>
+
+@code
+{
+    public class coords{
+        public double lat { get; set; }
+        public double lon { get; set; }
+        public     string w3wkey { get; set; } = "";
+    }
+
+    public coords Coords = new coords();
+
+    W3W? w3wjson { get; set; } = null;
+
+    async Task Get3Words()
+    {
+        w3wjson = await WhatThreeWords.GetW3W(Coords.lat, Coords.lon, Coords.w3wkey);
+    }
+}
+
+
+
+@if (w3wjson == null)
+{
+    <p><em>...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>Country</td>
+                    <td>@w3wjson?.country</td>
+                </tr>
+                <tr>
+                    <td>Nearest Place</td>
+                    <td>@w3wjson?.nearestPlace</td>
+                </tr>
+                <tr>
+                    <td>W3W Words</td>
+                    <td>@w3wjson?.words</td>
+                </tr>
+                <tr>
+                    <td>Map Link</td>
+                <td><a href="@w3wjson?.map" target="_blank">@w3wjson?.map</a></td>
+                </tr>
+                <tr>
+                    <td>Coordinates(lat,lng)</td>
+                <td>$"{@w3wjson?.coordinates?.lat},{@w3wjson?.coordinates?.lng}"</td>
+                </tr>
+        </tbody>
+    </table>
+}
+
+@code {
+
+    protected override void OnInitialized()
+    {
+
+    }
+}

@@ -8,6 +8,7 @@ A C# .Net 6 Console app that can generate W3W map tri-word and related json data
 - eg Try this: https://what3words.com/adjust.case.trains
 
 ## Links
+- [Blog](https://davidjones.sportronics.com.au/web/GPS-W3W_Mapping-web.html)
 - [Getting Started](https://developer.what3words.com/public-api)
 - [Get API Key](https://what3words.com/select-plan?referrer=/public-api)
    - Can get Free key, 100 lookups per month.
@@ -54,5 +55,6 @@ OR
 - WhatThreeWordsConsole: Console app that calls WhatThreeWords Class
   - Same functionality as W3WProject though.
 - WhatThreeWordsNugetConsole: As previous but uses Nuget Package WhatThreeWords
+- **_Latest**_ W3WBlazor: Blazor Server app with form entry of GPS and key. Once serached can click on map link.
 
 
