@@ -2,13 +2,14 @@
 
 ## About
 A C# .Net 6 Console app that can generate W3W map tri-word and related json data from GPS coordinates.
+Includes lib version and Nuget package enabling reuse of functionality. Also Blazor Server version with UI input.
 
 - W3W: What Three Words
-- Three words uniquley define a square 3mx3m (10'x10') world-wide
+- Three words that uniquley define a square 3mx3m (10'x10') world-wide
 - eg Try this: https://what3words.com/adjust.case.trains
 
 ## Links
-- [Blog](https://davidjones.sportronics.com.au/web/GPS-W3W_Mapping-web.html)
+- [Blog](https://davidjornes.sportronics.com.au/web/GPS-W3W_Mapping-web.html)
 - [Getting Started](https://developer.what3words.com/public-api)
 - [Get API Key](https://what3words.com/select-plan?referrer=/public-api)
    - Can get Free key, 100 lookups per month.
