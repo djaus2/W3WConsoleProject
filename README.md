@@ -47,14 +47,17 @@ OR
 ## Update: Projects
 - W3WProject: Standalone Console project
 - WhatThreeWords: W3W in static class library
+  - **_Note:_** Also available as Nuget package: **Sportronics.Utility.WhatThreeWords**
+  - Includes class definition for W3W
   - ```WhatThreeWords.GetW3W()``` Returns W3W class instance
   - Usage:  
  ```cs           
  var w3wjson = await WhatThreeWords.GetW3W(lattitude, longitude, w3wkey);
 ```
+
 - WhatThreeWordsConsole: Console app that calls WhatThreeWords Class
   - Same functionality as W3WProject though.
-- WhatThreeWordsNugetConsole: As previous but uses Nuget Package WhatThreeWords
-- **_Latest**_ W3WBlazor: Blazor Server app with form entry of GPS and key. Once serached can click on map link.
+- WhatThreeWordsNugetConsole: As previous but uses Nuget Package **Sportronics.Utility.WhatThreeWords**
+  - Note: Original Nuget package WhatThreeWords has been deprecated.
 
 
