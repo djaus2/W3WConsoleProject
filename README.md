@@ -59,5 +59,7 @@ OR
   - Same functionality as W3WProject though.
 - WhatThreeWordsNugetConsole: As previous but uses Nuget Package **Sportronics.Utility.WhatThreeWords**
   - Note: Original Nuget package WhatThreeWords has been deprecated.
+- **_Latest_** W3WBlazor: Blazor Server app with form entry of GPS and key. 
+  - Once searched can click on map link.
 
 
