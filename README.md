@@ -2,7 +2,7 @@
 
 <hr/>
 
-> **Latest:** Added a Maui app to action the triword geneertion.
+> **Latest:** Added a .NET MAUI app to action the triword geneertion.
 > 
 <hr/>
 
@@ -68,6 +68,6 @@ OR
   - Note: Original Nuget package WhatThreeWords has been deprecated.
 - **W3WBlazor**: Blazor Server app with form entry of GPS and key. 
   - Once searched can click on map link.
-  - **_Latest_** **NetMauiW3W**: A Simple Maui app to do teh same. _(Uses the Nuget Package)_
+  - **_Latest_** **NetMauiW3W**: A Simple .NET MAUI app to do the same. _(Uses the Nuget Package)_
 
 
