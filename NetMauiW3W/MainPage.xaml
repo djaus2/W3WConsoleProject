@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:NetMauiW3W"
+             x:Class="NetMauiW3W.MainPage">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="5"
+            Padding="5"
+            VerticalOptions="Start">
+
+            <Label
+                Text="Get What3Words for a GPS Location"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+            <Button
+               x:Name="GetW2WBtn"
+               IsEnabled="false"
+               Text="Get What Three Words"
+               SemanticProperties.Hint="Counts the number of times you click"
+               Clicked="OnGetWhatThreeWordsClicked"
+               HorizontalOptions="Center" />
+            
+            <VerticalStackLayout WidthRequest="200"
+                VerticalOptions="Start"
+                HorizontalOptions="Center">
+                
+                <Entry x:Name="lat"
+                    IsEnabled="true"
+                    Placeholder="Enter latitude"
+                    TextChanged="OnEntryCompletedLat"/>
+                <Entry x:Name="lng"
+                    IsEnabled="false"
+                    Placeholder="Enter longitude"
+                    TextChanged="OnEntryCompletedLng"/>
+                <Entry x:Name="w3wkey"
+                    IsEnabled="false"
+                    Placeholder="Enter W3W key"
+                    TextChanged="OnEntryCompletedW3wKey"/>
+                
+            </VerticalStackLayout>
+
+            <ActivityIndicator IsRunning="false" IsVisible="false" x:Name="Busy" />
+
+            <TableView Intent="Settings" WidthRequest="400" HorizontalOptions="Center"
+                       IsVisible="false" x:Name="WsWJsonTable">
+                <TableRoot>
+                    <TableSection Title= "What3Words Data">
+                        <TextCell Text="" x:Name="TC1" Detail=""/>
+                        <TextCell Text="" x:Name="TC2" Detail=""/>
+                        <TextCell Text="" x:Name="TC3" Detail=""/>
+                        <TextCell Text="" x:Name="TC4" Detail=""/>
+                        <TextCell Text="" x:Name="TC5" Detail=""/>
+                        <TextCell Text="" x:Name="TC6" Detail=""/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+
+
+            <!-- The hyperlink doesn't fire upon tap-->
+            <Label HorizontalOptions="Center" IsVisible="false" x:Name="Hyper">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Click "  />
+                        <local:HyperlinkSpan Text="here"
+                                             x:Name="URL"
+                                         Url="https://learn.microsoft.com/dotnet/" />
+                        <Span Text=" to view the map location. (Ps Use Button for now.)" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Button
+               x:Name="GotoMap"
+               IsEnabled="true"
+               IsVisible="false"
+               Text="Go to Map"
+               SemanticProperties.Hint="Opens browser to map URL"
+               Clicked="OnGoToMapClicked"
+               HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

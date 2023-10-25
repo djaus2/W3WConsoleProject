@@ -10,13 +10,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatThreeWords", "W3WClass\WhatThreeWords.csproj", "{CF0F84DD-8686-48ED-9908-B5431D33D6E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatThreeWords", "W3WClass\WhatThreeWords.csproj", "{CF0F84DD-8686-48ED-9908-B5431D33D6E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatThreeWordsConsole", "WhatThreeWordsConsole\WhatThreeWordsConsole.csproj", "{BE45CB89-FFCE-412C-BE7C-256E6B159BF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatThreeWordsConsole", "WhatThreeWordsConsole\WhatThreeWordsConsole.csproj", "{BE45CB89-FFCE-412C-BE7C-256E6B159BF7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatThreeWordsNugetConsole", "WhatThreeWordsNugetConsole\WhatThreeWordsNugetConsole.csproj", "{80832907-780C-4088-A002-FC6CA9D114F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W3WBlazor", "W3WBlazor\W3WBlazor.csproj", "{54E5F6CB-C0C4-4F51-A718-286B9186264F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "W3WBlazor", "W3WBlazor\W3WBlazor.csproj", "{54E5F6CB-C0C4-4F51-A718-286B9186264F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetMauiW3W", "NetMauiW3W\NetMauiW3W.csproj", "{7A3C5AF7-79CA-4152-9996-1C524A7EF4A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +46,12 @@ Global
 		{54E5F6CB-C0C4-4F51-A718-286B9186264F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54E5F6CB-C0C4-4F51-A718-286B9186264F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54E5F6CB-C0C4-4F51-A718-286B9186264F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A3C5AF7-79CA-4152-9996-1C524A7EF4A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A3C5AF7-79CA-4152-9996-1C524A7EF4A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A3C5AF7-79CA-4152-9996-1C524A7EF4A5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7A3C5AF7-79CA-4152-9996-1C524A7EF4A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A3C5AF7-79CA-4152-9996-1C524A7EF4A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A3C5AF7-79CA-4152-9996-1C524A7EF4A5}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
