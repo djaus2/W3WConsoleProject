@@ -1,5 +1,9 @@
 # W3W
 
+<hr/>
+> **Latest:** Add a Maui app to action the triword geneeration.
+<hr/>
+
 ## About
 A C# .Net 6 Console app that can generate W3W map tri-word and related json data from GPS coordinates.
 Includes lib version and Nuget package enabling reuse of functionality. Also Blazor Server version with UI input.
@@ -46,8 +50,8 @@ OR
 - Paste the Url generated into a Web Browser.
 
 ## Update: Projects
-- W3WProject: Standalone Console project
-- WhatThreeWords: W3W in static class library
+- **W3WProject**: Standalone Console project
+- **WhatThreeWords**: W3W in static class library
   - **_Note:_** Also available as Nuget package: **Sportronics.Utility.WhatThreeWords**
   - Includes class definition for W3W
   - ```WhatThreeWords.GetW3W()``` Returns W3W class instance
@@ -56,11 +60,12 @@ OR
  var w3wjson = await WhatThreeWords.GetW3W(lattitude, longitude, w3wkey);
 ```
 
-- WhatThreeWordsConsole: Console app that calls WhatThreeWords Class
+- **WhatThreeWordsConsole**: Console app that calls WhatThreeWords Class
   - Same functionality as W3WProject though.
-- WhatThreeWordsNugetConsole: As previous but uses Nuget Package **Sportronics.Utility.WhatThreeWords**
+- **WhatThreeWordsNugetConsole**: As previous but uses Nuget Package **Sportronics.Utility.WhatThreeWords**
   - Note: Original Nuget package WhatThreeWords has been deprecated.
-- **_Latest_** W3WBlazor: Blazor Server app with form entry of GPS and key. 
+- **W3WBlazor**: Blazor Server app with form entry of GPS and key. 
   - Once searched can click on map link.
+  - **_Latest_** **NetMauiW3W**: A Simple Maui app to do teh same. _(Uses the Nuget Package)_
 
 
