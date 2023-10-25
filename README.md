@@ -1,7 +1,9 @@
 # W3W
 
 <hr/>
-> **Latest:** Add a Maui app to action the triword geneeration.
+
+> **Latest:** Added a Maui app to action the triword geneertion.
+> 
 <hr/>
 
 ## About
