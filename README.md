@@ -70,7 +70,7 @@ OR
 - **W3WBlazor**: Blazor Server app with form entry of GPS and key. 
   - Once searched can click on map link.
 - <font color="blue">**_Latest_**</font> **NetMauiW3W**: A Simple .NET MAUI app to do the same.
-- <font color="blue">**_Even later_**</font> **GetGPSsNugetConsole**: (Reverse) Console app to lookup up GPS from What3Words dotted string
+- <font color="blue">**_Even later_**</font> **GetGPSNugetConsole**: (Reverse) Console app to lookup up GPS from What3Words dotted string
   - WhatThreeWords class has added method to do reverse lookup
     - In Nuget package as used by this app.
 ```cs
