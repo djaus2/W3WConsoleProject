@@ -1,5 +1,11 @@
 # W3W
 
+<hr/>
+
+> **Latest:** Added a .NET MAUI app to action the triword geneertion.
+> 
+<hr/>
+
 ## About
 A C# .Net 6 Console app that can generate W3W map tri-word and related json data from GPS coordinates.
 Includes lib version and Nuget package enabling reuse of functionality. Also Blazor Server version with UI input.
@@ -47,8 +53,8 @@ OR
 - Paste the Url generated into a Web Browser.
 
 ## Update: Projects
-- W3WProject: Standalone Console project
-- WhatThreeWords: W3W in static class library
+- **W3WProject**: Standalone Console project
+- **WhatThreeWords**: W3W in static class library
   - **_Note:_** Also available as Nuget package: **Sportronics.Utility.WhatThreeWords**
   - Includes class definition for W3W
   - ```WhatThreeWords.GetW3W()``` Returns W3W class instance
@@ -57,11 +63,11 @@ OR
  var w3wjson = await WhatThreeWords.GetW3W(lattitude, longitude, w3wkey);
 ```
 
-- WhatThreeWordsConsole: Console app that calls WhatThreeWords Class
+- **WhatThreeWordsConsole**: Console app that calls WhatThreeWords Class
   - Same functionality as W3WProject though.
-- WhatThreeWordsNugetConsole: As previous but uses Nuget Package **Sportronics.Utility.WhatThreeWords**
+- **WhatThreeWordsNugetConsole**: As previous but uses Nuget Package **Sportronics.Utility.WhatThreeWords**
   - Note: Original Nuget package WhatThreeWords has been deprecated.
-- **_Latest_** W3WBlazor: Blazor Server app with form entry of GPS and key. 
+- **W3WBlazor**: Blazor Server app with form entry of GPS and key. 
   - Once searched can click on map link.
 - **_Even later_** GetGPSsNugetConsole: (Reverse) Console app to lookup up GPS from What3Words dotted string
   - WhatThreeWords class has added method to do reverse lookup
