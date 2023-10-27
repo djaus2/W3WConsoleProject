@@ -3,6 +3,7 @@
 ## About
 A C# .Net 6 Console app that can generate W3W map tri-word and related json data from GPS coordinates.
 Includes lib version and Nuget package enabling reuse of functionality. Also Blazor Server version with UI input.
+And .NET MAUI app.  Reverse lookup Console app added (triwords to GPS).
 
 - W3W: What Three Words
 - Three words that uniquley define a square 3mx3m (10'x10') world-wide
@@ -62,5 +63,10 @@ OR
   - Note: Original Nuget package WhatThreeWords has been deprecated.
 - **_Latest_** W3WBlazor: Blazor Server app with form entry of GPS and key. 
   - Once searched can click on map link.
-
+- **_Even later_** GetGPSsNugetConsole: (Reverse) Console app to lookup up GPS from What3Words dotted string
+  - WhatThreeWords class has added method to do reverse lookup
+    - In Nuget package as used by his app.
+```cs
+var w3wjson = await WhatThreeWords.GetGPS(words3, w3wkey);
+```
 

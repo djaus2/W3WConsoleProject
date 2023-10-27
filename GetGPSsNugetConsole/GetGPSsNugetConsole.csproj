@@ -12,5 +12,10 @@
     <PackageReference Include="TextCopy" Version="6.2.1" />
   </ItemGroup>
 
+  <!--<ItemGroup>
+    <ProjectReference Include="..\W3WClass\WhatThreeWords.csproj" />
+  </ItemGroup>-->
+
+
 
 </Project>
