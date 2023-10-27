@@ -2,7 +2,7 @@
 
 <hr/>
 
-> **Latest:** Added a .NET MAUI app to action the triword geneertion.
+> <font color="blue">**Latest:**</font> Added a .NET MAUI app to action the triword generation. And reverse lookup (to GPS) Console app.
 > 
 <hr/>
 
@@ -69,9 +69,10 @@ OR
   - Note: Original Nuget package WhatThreeWords has been deprecated.
 - **W3WBlazor**: Blazor Server app with form entry of GPS and key. 
   - Once searched can click on map link.
-- **_Even later_** GetGPSsNugetConsole: (Reverse) Console app to lookup up GPS from What3Words dotted string
+- <font color="blue">**_Latest_**</font> **NetMauiW3W**: A Simple .NET MAUI app to do the same.
+- <font color="blue">**_Even later_**</font> **GetGPSsNugetConsole**: (Reverse) Console app to lookup up GPS from What3Words dotted string
   - WhatThreeWords class has added method to do reverse lookup
-    - In Nuget package as used by his app.
+    - In Nuget package as used by this app.
 ```cs
 var w3wjson = await WhatThreeWords.GetGPS(words3, w3wkey);
 ```
