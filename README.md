@@ -45,9 +45,9 @@ The map link URL is on the clipboard.
 Get What3Words Tri-words for GPS location.
 - Get an API Key _(See link above)_
 - Insert into Data.cs
-  - Insert lattitude and longitude coordinates into Data.cs  
+  - Insert latitude and longitude coordinates into Data.cs  
 OR
-- Enter lattitude longitude on command line.
+- Enter latitude longitude on command line.
   - AND (Optionally) enter API Key as third parameter.
 - Run the app.
 - Paste the Url generated into a Web Browser.
@@ -60,7 +60,7 @@ OR
   - ```WhatThreeWords.GetW3W()``` Returns W3W class instance
   - Usage:  
  ```cs           
- var w3wjson = await WhatThreeWords.GetW3W(lattitude, longitude, w3wkey);
+ var w3wjson = await WhatThreeWords.GetW3WAsync(latitude, longitude, w3wkey);
 ```
 
 - **WhatThreeWordsConsole**: Console app that calls WhatThreeWords Class
@@ -74,6 +74,6 @@ OR
   - WhatThreeWords class has added method to do reverse lookup
     - In Nuget package as used by this app.
 ```cs
-var w3wjson = await WhatThreeWords.GetGPS(words3, w3wkey);
+var w3wjson = await WhatThreeWords.GetGPSAsync(words3, w3wkey);
 ```
 
