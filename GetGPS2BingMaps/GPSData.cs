@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace W3WClass
     public static class GPSData
     {
         // Sample: Regional Victoria/Australia near Maldon.
-        public static string words3 = "decorators.storybook.twisty";
+        public static string words3 = "adjust.case.trains";
 
         // Ref: W3W API Key and Docs
         public static string w3wkey = "";
@@ -39,15 +40,16 @@ namespace W3WClass
         }
 
 
-        public static int zoomlevel = 7;
+        public static int zoomlevel = 18;
         public static int ppStyle = 36;
         public static int mapWidth = 800;
+        public static string maptype = "Road";//Aerial
         public static string MapArea
         {
             get
             {
                 return
-                    $"https://dev.virtualearth.net/REST/v1/Imagery/Map/Aerial/{centerpoint}/{zoomlevel}?" +
+                    $"https://dev.virtualearth.net/REST/v1/Imagery/Map/{maptype}/{centerpoint}/{zoomlevel}?" +
                     $"mapSize={mapWidth},{mapWidth}" +
                     $"&pp={pushpinLocation};{ppStyle}" +
                     $"&mapLayer=Basemap,Buildings" +
