@@ -39,6 +39,18 @@ namespace GetGPS
 
             }
 
+            Console.Write($"Enter Zoom Level 1 to 20. Default {GPSData.zoomlevel}: ");
+            string? zl = Console.ReadLine();
+            if (!string.IsNullOrEmpty(zl))
+            {
+                if(int.TryParse(zl,out int _zl))
+                {
+                    GPSData.zoomlevel = _zl;
+                }
+            }
+            Console.WriteLine($"Using Zoom Level {GPSData.zoomlevel}");
+            Console.WriteLine();
+
             var w3wjson = await WhatThreeWords.GetGPSAsync(GPSData.words3, GPSData.w3wkey);
             if (w3wjson != null)
             {
