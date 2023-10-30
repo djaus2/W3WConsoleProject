@@ -22,6 +22,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetMauiW3W", "NetMauiW3W\Ne
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetGPSsNugetConsole", "GetGPSsNugetConsole\GetGPSsNugetConsole.csproj", "{BEEB4263-2D4B-47C2-BAD5-81DEBD116D6A}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetGPS2BingMaps", "GetGPS2BingMaps\GetGPS2BingMaps.csproj", "{2DF57FCB-A920-433E-820D-0F43C2F08300}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +60,10 @@ Global
 		{BEEB4263-2D4B-47C2-BAD5-81DEBD116D6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEEB4263-2D4B-47C2-BAD5-81DEBD116D6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEEB4263-2D4B-47C2-BAD5-81DEBD116D6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DF57FCB-A920-433E-820D-0F43C2F08300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DF57FCB-A920-433E-820D-0F43C2F08300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DF57FCB-A920-433E-820D-0F43C2F08300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DF57FCB-A920-433E-820D-0F43C2F08300}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

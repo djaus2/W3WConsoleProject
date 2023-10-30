@@ -9,7 +9,7 @@ namespace W3WClass
     public static class GPSData
     {
 
-        public static string w3wkey = "75VBLWM2";
+        public static string w3wkey = "";
         public static string words3 = "decorators.storybook.twisty";
         public static double lat = 0.0;
         public static double lon = 0.0;
