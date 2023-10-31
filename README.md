@@ -2,7 +2,7 @@
 
 <hr/>
 
-> <font color="blue">**Latest:**</font> Added a .NET MAUI app to action the triword generation. And reverse lookup (to GPS) Console app. And get Bing Static Map.
+> <font color="blue">**Latest:**</font> Added a .NET MAUI app to action the triword generation. And reverse lookup (to GPS) Console app. And get Bing Static Map. And ... Blazor Map app.
 > 
 <hr/>
 
