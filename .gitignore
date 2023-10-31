@@ -367,3 +367,5 @@ FodyWeavers.xsd
 /WhatThreeWordsNugetConsole/Secrets.txt
 /GetGPSsNugetConsole/Secrets.txt
 /GetGPS2BingMaps/Secrets.txt
+/GPSMap/Data/Secrets.txt
+/GPSMapfromW3WBlazor/Data/Secrets.txt
