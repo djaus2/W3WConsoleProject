@@ -76,5 +76,7 @@ OR
 ```cs
 var w3wjson = await WhatThreeWords.GetGPSAsync(words3, w3wkey);
 ```
-- <font color="red">**_Anf more:_**</font> **GetGPS2BingMaps** As per previous app but generates Bing Static Map URL.
+- <font color="red">**_And more:_**</font> **GetGPS2BingMaps** As per previous app but generates Bing Static Map URL.
+- <font color="green">**_And FINALLY!:_**</font> **GPSMapfromW3WBlazor** Get GPS from W3W and display on Bing Map inapp. 
+  - Requires Telerik License. See previous using of the app at [Steps 1..3](https://github.com/djaus2/GPSMapIoTHub#getting-started)
 

@@ -1,0 +1,250 @@
+﻿@page "/"
+@using BlazorPro.Spinkit
+@using GPSMapfromW3WBlazor.Data
+@using W3WClass
+
+<!--From: https://demos.telerik.com/blazor-ui/map/overview -->
+
+
+<style>
+    .custom-marker-class {
+        background-image: url(/images/sunny.png);
+        padding-top: 20px;
+        text-align: center;
+        background-size: 20px;
+        width: 20px;
+        background-repeat: no-repeat;
+        display: inline-table;
+        font-size: 12px;
+    }
+
+    .second-custom-marker-class {
+        background-image: url(https://demos.telerik.com/kendo-ui/content/dataviz/chart/images/rainy.png);
+        padding-top: 65px;
+        text-align: center;
+        background-size: 65px;
+        width: 63px;
+        background-repeat: no-repeat;
+        display: inline-table;
+        font-size: 12px;
+    }
+</style>
+
+<h1>GPS Map from What Three Words</h1>
+
+
+<table>
+    <tr>
+        <td><button @onclick=@SendCommand>Get GPS from W3W</button></td>
+        <td colspan="3"><TelerikTextBox @bind-Value="@Command" Placeholder="Enter What.Three.Words" /></td>
+    </tr>
+    <tr><td colspan="2">eg.@GPSData.initwords3</td></tr>
+    <tr><td>Latitude:&nbsp;</td><td>@Center[0]</td></tr>
+    <tr><td>Longitude:&nbsp;</td><td>@Center[1]</td></tr>
+</table>
+
+    <br />
+
+
+
+
+@if (MapIsVisble)
+{
+    <table>
+    <tr>
+            <td><button @onclick="() => {ScrollHorizontal(100);}">&nbsp;&nbsp;&nbsp&lt;&nbsp;&nbsp;&nbsp</button></td>
+            <td><button @onclick="() => {ScrollHorizontal(-100);}">&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;</button></td>
+            <td><button @onclick="() => {ScrollVertical(100);}">&nbsp;&nbsp;&nbsp;Up&nbsp;&nbsp;&nbsp</button></td>
+            <td><button @onclick="() => {ScrollVertical(-100);}">&nbsp;&nbsp;&nbsp;Down&nbsp;&nbsp;&nbsp;</button></td>
+    </tr>
+    <tr>
+        <td><button @onclick="() => {zoom++;}">&nbsp;&nbsp;&nbsp+&nbsp;&nbsp;&nbsp</button></td>
+        <td><button @onclick="() => {zoom--;}">&nbsp;&nbsp;&nbsp;--&nbsp;&nbsp;&nbsp;</button></td>
+        <td colspan="2">
+            &nbsp;
+            <TelerikCheckBox @bind-Value="@autoCenterMap"
+                             Id="IdAutoCenter)">
+            </TelerikCheckBox>
+            <label for="IdAutoCenter)">
+                Auto Center Map
+            </label>
+        </td>
+    </tr>
+    </table>
+<TelerikMap Center="@Center"
+            MinZoom="3"
+            OnClick="@OnMapZoom"
+            Zoom="@zoom">
+    <MapLayers>
+        <MapLayer Type="@MapLayersType.Tile"
+                  Attribution="@Attribution"
+                  Subdomains="@Subdomains"
+                  UrlTemplate="@UrlTemplate">
+        </MapLayer>
+        <MapLayer Type="@MapLayersType.Marker"
+                  Data="@MarkerDataGPSPoint"
+                  LocationField="@nameof(MarkerModel.LatLng)"
+                  TitleField="@nameof(MarkerModel.Address)">
+                  <MapLayerMarkerSettings Template="<span class='custom-marker-class'>#= dataItem.Address #</span>"/>              
+        </MapLayer>
+    </MapLayers>
+</TelerikMap>
+}
+
+
+
+@code {
+
+    public bool autoCenterMap = true;
+    public bool replayFast = false;
+
+    void ScrollHorizontal(int val)
+    {
+        if(val>0)
+            Center[1] +=0.001;
+        else
+            Center[1] -=0.001;
+    }
+    void ScrollVertical(int val)
+    {
+        if (val > 0)
+            Center[0] += 0.001;
+        else
+            Center[0] -= 0.001;
+    }
+
+    private string Command = "";
+
+    async Task SendCommand()
+    {
+        GPSData.words3 = Command;
+        var w3wjson = await WhatThreeWords.GetGPSAsync(GPSData.words3, GPSData.w3wkey);
+        if (w3wjson != null)
+        {
+            System.Diagnostics.Debug.WriteLine("Got json direct using httpClient.GetFromJsonAsync");
+            System.Diagnostics.Debug.WriteLine("=====================================================");
+            System.Diagnostics.Debug.WriteLine($"Latitude: {w3wjson.coordinates?.lat}");
+            System.Diagnostics.Debug.WriteLine($"Longitude: {w3wjson.coordinates?.lng}");
+            System.Diagnostics.Debug.WriteLine($"Country: {w3wjson.country}");
+            System.Diagnostics.Debug.WriteLine($"Nearest Place: {w3wjson.nearestPlace}");
+            System.Diagnostics.Debug.WriteLine($"W3W Words: {w3wjson.words}");
+            System.Diagnostics.Debug.WriteLine("---------------------------");
+            if (!string.IsNullOrEmpty(w3wjson.map))
+            {
+                System.Diagnostics.Debug.WriteLine($"W3W Map Link: {w3wjson.map}");
+
+                if (w3wjson.coordinates != null)
+                {
+#pragma warning disable CS8629 // Nullable value type may be null.
+                    GPSData.lat = (double)w3wjson.coordinates.lat;
+                    GPSData.lon = (double)w3wjson.coordinates.lng;
+#pragma warning restore CS8629 // Nullable value type may be null.
+                    MarkerDataGPSPoint[0] = new MarkerModel
+                        {
+                            LatLng = new[] { GPSData.lat, GPSData.lon },
+                            Address = $"{w3wjson.nearestPlace} {w3wjson.country}"
+                        };
+                    Center = MarkerDataGPSPoint[0].LatLng;
+                }
+                StateHasChanged();
+            }
+        }
+    }
+
+    public string[] Subdomains { get; set; } = new string[] { "a", "b", "c" };
+    public string UrlTemplate { get; set; } = "https://#= subdomain #.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png";
+    public string Attribution { get; set; } = "&copy; <a href='https://osm.org/copyright'>OpenStreetMap contributors</a>";
+    public double[] Center { get; set; } = new double[] { -37,144 };
+    public double[] Centeralt { get; set; } = new double[] { 0, 0 };
+
+
+
+    protected override async Task OnAfterRenderAsync(bool first)
+    {
+        if (first)
+        {;
+            await Delay(100);
+        }
+
+    }
+
+    // Just to  make  OnInitializedAsync async
+    async Task Delay(int del)
+    {
+        await Task.Delay(del);
+    }
+
+    protected override async Task  OnInitializedAsync()
+    {
+        _zoom = 16;
+        MapIsVisble = true;
+        await Delay(100);
+    }
+
+
+
+
+    public int _zoom = 16;
+    public int zoom
+    {
+        get
+        {
+            return _zoom;
+        }
+        set
+        {
+            if (value > 19)
+                _zoom = 19;
+            else if (value < 0)
+                _zoom = 0;
+            else
+                _zoom = value;
+
+        }
+    }
+
+    /// <summary>
+    /// This gets updated (moved) by GPS
+    /// </summary>
+    public List<MarkerModel> MarkerDataGPSPoint { get; set; } = new List<MarkerModel>()
+    {
+        // Roving
+        new MarkerModel()
+        {
+            LatLng = new double[] {-37, 144 },
+            Address = "Inital, Location",
+        },
+    };
+
+
+    public class MarkerModel
+    {
+        public double[] LatLng { get; set; } = new double[2];
+        public string Address { get; set; } = "";
+    }
+
+
+
+    public void OnMapZoom(MapClickEventArgs args)
+    {
+        var location = args.Location;
+        var eventArgs = args.EventArgs as MouseEventArgs;
+
+        if (eventArgs != null)
+        {
+            if (!eventArgs.ShiftKey)
+            {
+                zoom++;
+            }
+            else
+            {
+                zoom--;
+            }
+            StateHasChanged();
+        }
+
+    }
+
+    bool MapIsVisble = true;
+
+}
