@@ -26,6 +26,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetGPS2BingMaps", "GetGPS2B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GPSMapfromW3WBlazor", "GPSMapfromW3WBlazor\GPSMapfromW3WBlazor.csproj", "{70C93949-E20D-4F66-A4F9-44C6B248C3D2}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "W3WFormApp", "W3WFormApp\W3WFormApp.csproj", "{8CA865EB-2BA2-4559-8929-C51950A44566}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,6 +72,10 @@ Global
 		{70C93949-E20D-4F66-A4F9-44C6B248C3D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70C93949-E20D-4F66-A4F9-44C6B248C3D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70C93949-E20D-4F66-A4F9-44C6B248C3D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CA865EB-2BA2-4559-8929-C51950A44566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CA865EB-2BA2-4559-8929-C51950A44566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CA865EB-2BA2-4559-8929-C51950A44566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CA865EB-2BA2-4559-8929-C51950A44566}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

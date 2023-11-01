@@ -2,8 +2,8 @@
 
 <hr/>
 
-> <font color="blue">**Latest:**</font> Added a .NET MAUI app to action the triword generation. And reverse lookup (to GPS) Console app. And get Bing Static Map. And ... Blazor Map app.
-> 
+> <font color="blue">**Latest:**</font> Added a .NET MAUI app to action the triword generation. And reverse lookup (to GPS) Console app. And get Bing Static Map. And ... Blazor Map app. And Windows Form app.
+
 <hr/>
 
 ## About
@@ -69,14 +69,14 @@ OR
   - Note: Original Nuget package WhatThreeWords has been deprecated.
 - **W3WBlazor**: Blazor Server app with form entry of GPS and key. 
   - Once searched can click on map link.
-- <font color="blue">**_Latest_**</font> **NetMauiW3W**: A Simple .NET MAUI app to do the same.
-- <font color="purple">**_Even later_**</font> **GetGPSNugetConsole**: (Reverse) Console app to lookup up GPS from What3Words dotted string
+- **NetMauiW3W**: A Simple .NET MAUI app to do the same.
+- **GetGPSNugetConsole**: (Reverse) Console app to lookup up GPS from What3Words dotted string
   - WhatThreeWords class has added method to do reverse lookup
     - In Nuget package as used by this app.
 ```cs
 var w3wjson = await WhatThreeWords.GetGPSAsync(words3, w3wkey);
 ```
-- <font color="red">**_And more:_**</font> **GetGPS2BingMaps** As per previous app but generates Bing Static Map URL.
-- <font color="green">**_And FINALLY!:_**</font> **GPSMapfromW3WBlazor** Get GPS from W3W and display on Bing Map inapp. 
+- **GetGPS2BingMaps** As per previous app but generates Bing Static Map URL.
+- **GPSMapfromW3WBlazor** Get GPS from W3W and display on Bing Map inapp. 
   - Requires Telerik License. See previous use of the app at [Steps 1..3](https://github.com/djaus2/GPSMapIoTHub#getting-started)
-
+- **W3WFormApp** Windows forms equivalent of _GetGPSNugetConsole/W3WBlazor_ apps.
