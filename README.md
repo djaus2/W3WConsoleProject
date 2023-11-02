@@ -2,7 +2,7 @@
 
 <hr/>
 
-> <font color="blue">**Latest:**</font> Clean up of code. New Nuget version ... added symbols
+> <font color="blue">**Latest:**</font> Clean up of code. New Nuget version ... added symbols. WPF W3W2GPS app added.
 
 <hr/>
 
@@ -80,3 +80,4 @@ var w3wjson = await WhatThreeWords.GetGPSAsync(words3, w3wkey);
 - **GPSMapfromW3WBlazor** Get GPS from W3W and display on Bing Map inapp. 
   - Requires Telerik License. See previous use of the app at [Steps 1..3](https://github.com/djaus2/GPSMapIoTHub#getting-started)
 - **W3WFormApp** Windows forms equivalent of _GetGPSNugetConsole/W3WBlazor_ apps.
+- **W3W2GPS_WPF** WPF version of _GetGPSNugetConsole/W3WBlazor_ apps.

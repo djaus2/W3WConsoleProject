@@ -28,6 +28,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GPSMapfromW3WBlazor", "GPSM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "W3WFormApp", "W3WFormApp\W3WFormApp.csproj", "{8CA865EB-2BA2-4559-8929-C51950A44566}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "W3W2GPS_WPF", "W3W2GPS_WPF\W3W2GPS_WPF.csproj", "{78F4C651-D4CE-4263-A8E6-AD8E3B0E70BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -76,6 +78,10 @@ Global
 		{8CA865EB-2BA2-4559-8929-C51950A44566}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CA865EB-2BA2-4559-8929-C51950A44566}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CA865EB-2BA2-4559-8929-C51950A44566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78F4C651-D4CE-4263-A8E6-AD8E3B0E70BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78F4C651-D4CE-4263-A8E6-AD8E3B0E70BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78F4C651-D4CE-4263-A8E6-AD8E3B0E70BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78F4C651-D4CE-4263-A8E6-AD8E3B0E70BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
