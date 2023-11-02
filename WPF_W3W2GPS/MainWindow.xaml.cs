@@ -42,6 +42,9 @@ namespace W3W2GPS_WPF
                 mapTextbox.Text =$"{bingMap}";
                 Clipboard.SetText(bingMap);
                 infoTextbox.Text = "The Bing Map link URL is on the clipboard.";
+                latTextBox.Text = $"{GPSData.lat}";
+                lonTextBox.Text = $"{GPSData.lon}";
+                nearTextBox.Text = $"{w3wjson.nearestPlace},{w3wjson.country}";
 
             }
         }

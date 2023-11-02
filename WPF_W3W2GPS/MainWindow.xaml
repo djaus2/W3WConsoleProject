@@ -16,17 +16,30 @@
             <DockPanel>
                 <Button Content="Get GPS" Click="Button_Click" Margin="10"/>
             </DockPanel>
-           <DockPanel>
-                <Label>One</Label>
-               <TextBox x:Name="mapTextbox"   IsReadOnly="True" Margin="10"/>
+            <DockPanel>
+                <Label>Latitude</Label>
+                <TextBox x:Name="latTextBox" IsReadOnly="True" Margin="10"/>
             </DockPanel>
             <DockPanel>
-                <Label>Two</Label>
-                <TextBox x:Name="infoTextbox" IsReadOnly="True" Margin="10"/>
+                <Label>Longitude</Label>
+                <TextBox x:Name="lonTextBox" IsReadOnly="True" Margin="10"/>
+            </DockPanel>
+            <DockPanel>
+                <Label>Nearby</Label>
+                <TextBox x:Name="nearTextBox" IsReadOnly="True" Margin="10"/>
             </DockPanel>
             <DockPanel>
                 <Button Content="Go to Map" Click="button1_Click"  Margin="10"/>
             </DockPanel>
+            <DockPanel>
+                <Label>Map Url</Label>
+               <TextBox x:Name="mapTextbox"   IsReadOnly="True" Margin="10"/>
+            </DockPanel>
+            <DockPanel>
+                <Label>Info</Label>
+                <TextBox x:Name="infoTextbox" IsReadOnly="True" Margin="10"/>
+            </DockPanel>
+
         </StackPanel>
     </Grid>
 </Window>
