@@ -1,20 +1,12 @@
-# W3W
-
-<hr/>
-
-> <font color="blue">**Latest:**</font> Clean up of code. New Nuget version ... added symbols.<br/>
-> WPF and equivalent UWP app added._(Uwp app has local UWP class, not Nuget)_.
-
-<hr/>
-
+# What3Words
 ## About
-A C# .Net 6 Console app that can generate W3W map tri-word and related json data from GPS coordinates.
-Includes lib version and Nuget package enabling reuse of functionality. Also Blazor Server version with UI input.
-And .NET MAUI app.  Reverse lookup Console app added (triwords to GPS).
+A smorgasboard of C# .Net 6 apps that can generate W3W map tri-words and related json data from GPS coordinates.
+Includes lib version and Nuget package enabling reuse of functionality.  .NET Console, Blazor, MAUI, UWP and WPF examples using same API.
+Reverse lookup also (triwords to GPS).
 
 - W3W: What Three Words
 - Three words that uniquley define a square 3mx3m (10'x10') world-wide
-- eg Try this: https://what3words.com/adjust.case.trains
+- eg Try this: [https://what3words.com/adjust.case.trains](https://what3words.com/adjust.case.trains)
 
 ## Links
 - [Blog](https://davidjones.sportronics.com.au/web/GPS-W3W_Mapping-web.html)
