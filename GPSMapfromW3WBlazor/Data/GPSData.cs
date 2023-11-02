@@ -9,7 +9,7 @@ namespace GPSMapfromW3WBlazor.Data
     public static class GPSData
     {
 
-        public static string w3wkey = "75VBLWM2";
+        public static string w3wkey = "";
         public static string words3 = "decorators.storybook.twisty";
         public static string initwords3 = "adjust.case.trains";
         public static double lat = 0.0;

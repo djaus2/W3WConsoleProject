@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Sportronics.Utility.WhatThreeWords" Version="1.1.0" />
+    <PackageReference Include="Sportronics.Utility.WhatThreeWords"  />
     <PackageReference Include="TextCopy" Version="6.2.1" />
   </ItemGroup>
 

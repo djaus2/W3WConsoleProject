@@ -8,7 +8,7 @@
 
   
   <ItemGroup>
-    <PackageReference Include="Sportronics.Utility.WhatThreeWords" Version="1.0.1" />
+    <PackageReference Include="Sportronics.Utility.WhatThreeWords"  />
   </ItemGroup>
 
 </Project>

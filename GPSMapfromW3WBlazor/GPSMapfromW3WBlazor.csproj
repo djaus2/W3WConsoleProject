@@ -11,16 +11,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Azure.Messaging.EventHubs" Version="5.9.2" />
     <PackageReference Include="BlazorPro.Spinkit" Version="1.2.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0-preview.7.23375.6" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Telerik.UI.for.Blazor" Version="4.3.0" />
     <PackageReference Include="Sportronics.Utility.WhatThreeWords" Version="1.1.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Azure.Devices" Version="2.0.0-preview001" />
   </ItemGroup>
 
   <ItemGroup>

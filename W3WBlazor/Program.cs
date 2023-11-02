@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
-using W3WBlazor.Data;
+
 
 namespace W3WBlazor
 {
@@ -13,7 +13,6 @@ namespace W3WBlazor
             // Add services to the container.
             builder.Services.AddRazorPages();
             builder.Services.AddServerSideBlazor();
-            builder.Services.AddSingleton<WeatherForecastService>();
 
             var app = builder.Build();
 
