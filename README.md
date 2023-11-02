@@ -2,7 +2,7 @@
 
 <hr/>
 
-> <font color="blue">**Latest:**</font> Clean up of code. New Nuget version ... added symbols. WPF W3W2GPS app added.
+> <font color="blue">**Latest:**</font> Clean up of code. New Nuget version ... added symbols.  WPF and equivalent UWP app added._(Uwp app has local UWP class, not Nuget)_.
 
 <hr/>
 
