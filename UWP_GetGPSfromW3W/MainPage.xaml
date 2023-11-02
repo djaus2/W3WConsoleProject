@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="GetGPSfromW3W_UWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GetGPSfromW3W_UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Get GPS from What3 Words" FontSize="40" Margin="10" HorizontalAlignment="Center"/>
+            <TextBox x:Name="w3wTextBox" Header="w3w" Margin="10"/>
+            <Button Content="Get GPS from W3W" Click="Button_Click" Margin="10"/>
+            <TextBox x:Name="latTextBox" Header="Latitude" IsReadOnly="True" Margin="10"/>
+            <TextBox x:Name="lonTextBox" Header="Longitude" IsReadOnly="True" Margin="10"/>
+            <TextBox x:Name="nearTextBox" Header="Nearby" IsReadOnly="True" Margin="10"/>
+            <Button Content="Get Map in Browser" Click="button1_Click" Margin="10"/>
+            <TextBox x:Name="mapTextbox" Header="Map URL" IsReadOnly="True" Margin="10"/>
+            <TextBox x:Name="infoTextbox" Header="Info" IsReadOnly="True" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Page>

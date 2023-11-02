@@ -4,12 +4,36 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>1.2.0</Version>
+    <PackageId>Sportronics.Utility.WhatThreeWords</PackageId>
+    <Version>1.3.0</Version>
     <Company>Sportronics</Company>
     <Product>WhatThreeWords</Product>
+    <title>What3Words tri-words generator</title>
+    <authors>David Jones (MVP)</authors>
+    <owners>davidjonesportronics,Sportronics</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <icon>icon.jpg</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/djaus2/W3WConsoleProject/tree/master/W3WClass</projectUrl>
+    <description>Generate  What3Words  tri-words  from GPS  coordinates (and reverse GPS lookup). Uniquely defines a 3mx3m llocation world-wide. Can be  used in some map apps.</description>
+    <releaseNotes>Added reverse lookup for GPS</releaseNotes>
+    <copyright>The package is free to use but the author retains copyright for it.</copyright>
+    <tags>what3words gps, c# .net</tags>
+    <dependencies>
+      <group targetFramework="net6.0" />
+    </dependencies>
 
   </PropertyGroup>
 
+  <PropertyGroup>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>icon.jpg</PackageIcon>
+    <PackageReleaseNotes>Added reverse lookup (W3W --&gt;GPS)</PackageReleaseNotes>
+    <PackageTags>what3words;gps,;c# ;net</PackageTags>
+    <RepositoryUrl>https://github.com/djaus2/W3WConsoleProject/tree/master/W3WClass</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/djaus2/W3WConsoleProject</PackageProjectUrl>
+  </PropertyGroup>
 
   <ItemGroup>
     <None Remove="images\icon.jpg" />
