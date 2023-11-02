@@ -80,6 +80,7 @@ var w3wjson = await WhatThreeWords.GetGPSAsync(words3, w3wkey);
 - **GetGPS2BingMaps** As per previous app but generates Bing Static Map URL.
 - **GPSMapfromW3WBlazor** Get GPS from W3W and display on Bing Map inapp. 
   - Requires Telerik License. See previous use of the app at [Steps 1..3](https://github.com/djaus2/GPSMapIoTHub#getting-started)
+ 
 - **W3WFormApp** Windows forms equivalent of _GetGPSNugetConsole/W3WBlazor_ apps.
 - **WPF_W3W2GPS** WPF version of _GetGPSNugetConsole/W3WBlazor_ apps.
-  **UWP_GetGPSfromW3W** UWP version of _GetGPSNugetConsole/W3WBlazor_ apps. Uses local lib **UWP_W3W2GPSLib**
+- **UWP_GetGPSfromW3W** UWP version of _GetGPSNugetConsole/W3WBlazor_ apps. Uses local lib **UWP_W3W2GPSLib**
