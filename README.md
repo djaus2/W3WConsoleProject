@@ -1,8 +1,8 @@
 # What3Words
 ## About
 A smorgasboard of C# .NET apps that can generate W3W map tri-words and related json data from GPS coordinates.
-Includes lib version and Nuget package enabling reuse of functionality.  .NET Console, Blazor, MAUI, UWP and WPF examples using same API.
-Reverse lookup also (triwords to GPS).
+Includes lib version and Nuget package enabling reuse of functionality.  .NET Console, Blazor Server, MAUI, UWP and WPF examples using same API.
+Reverse lookup also (triwords to GPS). Generated links to Bing and Google maps also.
 
 - W3W: What Three Words
 - Three words that uniquley define a square 3mx3m (10'x10') world-wide
