@@ -1,6 +1,6 @@
 # What3Words
 ## About
-A smorgasboard of C# .Net 6 apps that can generate W3W map tri-words and related json data from GPS coordinates.
+A smorgasboard of C# .NET apps that can generate W3W map tri-words and related json data from GPS coordinates.
 Includes lib version and Nuget package enabling reuse of functionality.  .NET Console, Blazor, MAUI, UWP and WPF examples using same API.
 Reverse lookup also (triwords to GPS).
 
