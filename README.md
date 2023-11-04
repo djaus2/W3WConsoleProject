@@ -1,10 +1,10 @@
 # What3Words
 ## About
 A smorgasboard of C# .NET apps that can generate W3W map tri-words and related json data from GPS coordinates.
-Includes lib version and Nuget package enabling reuse of functionality.  .NET Console, Blazor Server, MAUI, UWP and WPF examples using same API.
+Includes lib version and Nuget package enabling reuse of functionality.  .NET Console, Blazor Server, Blazor WebApplication, MAUI, UWP and WPF examples using same API.
 Reverse lookup also (triwords to GPS). Generated links to Bing and Google maps as well.
 
-- W3W: What Three Words
+- W3W: What Three Words 
 - Three words that uniquley define a square 3mx3m (10'x10') world-wide
 - eg Try this: [https://what3words.com/adjust.case.trains](https://what3words.com/adjust.case.trains)
 
@@ -77,4 +77,4 @@ var w3wjson = await WhatThreeWords.GetGPSAsync(words3, w3wkey);
 - **WPF_W3W2GPS** WPF version of _GetGPSNugetConsole/W3WBlazor_ apps.
 - **UWP_GetGPSfromW3W** UWP version of _GetGPSNugetConsole/W3WBlazor_ apps. Uses local lib **UWP_W3W2GPSLib**
 - .
-- **BlazorWA_W3W.Server** Blazor WebApplication of  _GetGPSNugetConsole/W3WBlazor app. _Separate Solution file available._
+- **BlazorWA_W3W.Server** Blazor WebApplication version of _GetGPSNugetConsole/W3WBlazor app. _Separate Solution file available._
