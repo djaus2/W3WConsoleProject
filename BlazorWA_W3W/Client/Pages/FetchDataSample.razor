@@ -1,0 +1,77 @@
+﻿@page "/fetchdatasample"
+@using BlazorWA_W3W.Shared
+@inject HttpClient Http
+
+<PageTitle>Get What Three Words Sample</PageTitle>
+
+<h1>Get What Three Words Sample</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+@if (w3w == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>TriWords:</td>
+                <td>@w3w.words</td>
+            </tr>
+            <tr>
+                <td>Locality:</td>
+                <td>@w3w.nearestPlace, @w3w.country</td>
+            </tr>
+            @if(w3w.coordinates != null)
+            {
+                if ((w3w.coordinates.lat != null) && (w3w.coordinates.lng != null))
+                {
+                    <tr>
+                        <td>Latitude:</td>
+                        <td>@w3w.coordinates.lat</td>
+                    </tr><tr>
+                        <td>Longitude:</td>
+                        <td>@w3w.coordinates.lng</td>
+                    </tr>
+                }
+            }
+            <tr>
+                <td>Map Url:</td>
+                <td><a href="@w3w.map" target="blank">@w3w.map</a></td>
+            </tr>
+            @if (w3w.square != null)
+            {
+                @if ((w3w.square.northeast != null && w3w.square.southwest != null))
+                {
+                    <tr>
+                        <td>Square NE(lat,lng):</td>
+                        <td>@w3w.square.northeast.lat,&nbsp;
+                            @w3w.square.northeast.lng</td>
+                    </tr>
+                    <tr>
+                        <td>Square SW(lat,lng):</td>
+                        <td>@w3w.square.southwest.lat,&nbsp;
+                            @w3w.square.southwest.lng</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private W3WShared? w3w= null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        w3w = await Http.GetFromJsonAsync<W3WShared>("W3W");
+    }
+}
