@@ -77,4 +77,4 @@ var w3wjson = await WhatThreeWords.GetGPSAsync(words3, w3wkey);
 - **WPF_W3W2GPS** WPF version of _GetGPSNugetConsole/W3WBlazor_ apps.
 - **UWP_GetGPSfromW3W** UWP version of _GetGPSNugetConsole/W3WBlazor_ apps. Uses local lib **UWP_W3W2GPSLib**
 - .
-- **BlazorWA_W3W** Blazor WebApplication version of _GetGPSNugetConsole/W3WBlazor app. _Separate Solution file available._ Nb: Run the Server.
+- **BlazorWA_W3W** Blazor WebApplication version of _GetGPSNugetConsole/W3WBlazor_ app. _Separate Solution file available._ Nb: Run the Server.
