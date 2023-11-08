@@ -9,7 +9,9 @@ Reverse lookup also (triwords to GPS). Generated links to Bing and Google maps a
 - eg Try this: [https://what3words.com/adjust.case.trains](https://what3words.com/adjust.case.trains)
 
 ## Links
-- [Blog](https://davidjones.sportronics.com.au/web/GPS-W3W_Mapping-web.html)
+- Blog posts:
+  - [What3Words Mapping - 1](https://davidjones.sportronics.com.au/web/GPS-W3W_Mapping-web.html)
+  - [What3Words Mapping - 2](https://davidjones.sportronics.com.au/web/GPS-What3Words_Mapping_-_2-web.html)
 - [Getting Started](https://developer.what3words.com/public-api)
 - [Get API Key](https://what3words.com/select-plan?referrer=/public-api)
    - Can get Free key, 100 lookups per month.
